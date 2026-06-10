@@ -1,6 +1,6 @@
 # Panduan Menjalankan Game Tarik Tambang Math di Android Studio 📱🤖
 
-Aplikasi ini telah berhasil dikonversi ke bahasa **Kotlin** murni menggunakan framework UI modern **Jetpack Compose**. Kamu bisa membukanya dan menjalankannya langsung di Android Studio dengan langkah-langkah mudah di bawah ini!
+Aplikasi ini telah berhasil dikonversi ke bahasa **Kotlin** murni menggunakan framework UI modern **Jetpack Compose**. Kamu bisa membukanya dan menjalankannya langsung di Android Studio dengan mudah!
 
 ---
 
@@ -12,12 +12,12 @@ Aplikasi ini telah berhasil dikonversi ke bahasa **Kotlin** murni menggunakan fr
 ---
 
 ## 📂 Struktur Folder Proyek Android
-Seluruh file kode sumber Kotlin tersimpan aman di dalam direktori `/android`:
-* `types/GameTypes.kt` -> Model data state permainan (Skor, Level, Operasi MTK).
-* `utils/MathUtils.kt` -> Logika acak soal matematika cerdas anak-anak.
-* `components/RopeView.kt` -> Komponen Tali Tarik Tambang interaktif + Animasi "💥 TALI PUTUS!".
-* `components/NumpadView.kt` -> Papan ketik angka (numpad) interaktif.
-* `MainActivity.kt` -> Halaman Utama Game, Mode Komputer 🤖, Mode 2 Pemain Lokal ⚔️, dan Efek Animasi (Skor Membesar & Timer Merah Berkedip ⚡).
+Seluruh file kode sumber Kotlin tersimpan mandiri di dalam direktori `/app`:
+* `/app/src/main/java/com/mathgame/tariktambang/types/GameTypes.kt` -> Model data state permainan (Skor, Level, Operasi MTK).
+* `/app/src/main/java/com/mathgame/tariktambang/utils/MathUtils.kt` -> Logika acak soal matematika cerdas anak-anak.
+* `/app/src/main/java/com/mathgame/tariktambang/components/RopeView.kt` -> Komponen Tali Tarik Tambang interaktif + Animasi "💥 TALI PUTUS!".
+* `/app/src/main/java/com/mathgame/tariktambang/components/NumpadView.kt` -> Papan ketik angka (numpad) interaktif.
+* `/app/src/main/java/com/mathgame/tariktambang/MainActivity.kt` -> Halaman Utama Game, Mode Komputer 🤖, Mode 2 Pemain Lokal ⚔️, dan Efek Animasi (Skor Membesar & Timer Merah Berkedip ⚡).
 
 ---
 
@@ -31,11 +31,11 @@ Seluruh file kode sumber Kotlin tersimpan aman di dalam direktori `/android`:
 ### Langkah 2: Buka Proyek di Android Studio
 1. Buka aplikasi **Android Studio** di komputermu.
 2. Klik tombol **Open** (atau *File -> Open...*).
-3. Arahkan direktori penjelajah file menuju ke folder **`/android`** yang berada di dalam folder hasil ekstrak sebelumnya.
-4. Klik **OK**. Android Studio akan mendeteksi penataan Gradle dan mengunduh seluruh modul dependensi yang dibutuhkan secara otomatis.
+3. Arahkan penjelajah file dan pilih **folder utama hasil ekstrak secara langsung (root folder)**.
+4. Klik **OK**. Android Studio akan mendeteksi `settings.gradle` secara otomatis di root folder tersebut, mengonfigurasinya sebagai proyek Android, dan mengunduh seluruh modul dependensi yang dibutuhkan secara mandiri.
 
 ### Langkah 3: Menjalankan Proyek
-1. Tunggu proses **Gradle Sync** selesai (ditandai dengan munculnya ikon checklist berwarna hijau di kanan bawah).
+1. Tunggu proses **Gradle Sync** selesai (ditandai dengan munculnya ikon checklist berwarna hijau di kanan bawah atau sinkronisasi selesai tanpa error).
 2. Pilih Perangkat Emulator ataupun HP Android aslimu di bar atas Android Studio.
 3. Klik tombol **Run App 🟩** (ikon segitiga hijau) di bagian atas layar.
 4. Selamat! Aplikasi game **Tug of War Matematika** versi native Kotlin berhasil dipasang dan siap dimainkan dengan performa tinggi!
