@@ -1,0 +1,6 @@
+{
+  "name": "Tarik Tambang Math Game",
+  "description": "Game tarik tambang matematika yang seru dan menyenangkan untuk anak-anak, dimainkan secara online maupun melawan komputer dengan Bahasa Indonesia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
